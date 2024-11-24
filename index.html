@@ -9,29 +9,41 @@
   <body>
     <main>
       <section class="wavy">
-        <span style="--i: 1">G</span>
-        <span style="--i: 2">E</span>
-        <span style="--i: 3">E</span>
-        <span style="--i: 4">K</span>
-        <span style="--i: 5">S</span>
-        <span style="--i: 6"> </span>
-        <span style="--i: 7">F</span>
-        <span style="--i: 8">O</span>
-        <span style="--i: 9">R</span>
-        <span style="--i: 10"> </span>
-        <span style="--i: 11">G</span>
-        <span style="--i: 12">E</span>
-        <span style="--i: 13">E</span>
-        <span style="--i: 14">K</span>
-        <span style="--i: 15">S</span>
-        <span style="--i: 16">.</span>
-        <span style="--i: 17">.</span>
-        <span style="--i: 18">.</span>
-        <span style="--i: 19">.</span>
-        <span style="--i: 20">.</span>
+        <span style="--i: 1">C</span>
+        <span style="--i: 2">O</span>
+        <span style="--i: 3">D</span>
+        <span style="--i: 4">I</span>
+        <span style="--i: 5">N</span>
+        <span style="--i: 6">G</span>
+        <span style="--i: 7"> </span>
+        <span style="--i: 8">F</span>
+        <span style="--i: 9">O</span>
+        <span style="--i: 10">R</span>
+        <span style="--i: 11"> </span>
+        <span style="--i: 12">T</span>
+        <span style="--i: 13">H</span>
+        <span style="--i: 14">E</span>
+        <span style="--i: 15"> </span>
+        <span style="--i: 16">A</span>
+        <span style="--i: 17">R</span>
+        <span style="--i: 18">T</span>
+        <span style="--i: 19">S</span>
       </section>
-      <section class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" id="slider" />
+      <section class="option-container">
+        <section class="slide-container">
+          <label for="slider">tiefer</label>
+          <input type="range" min="1" max="100" value="50" id="slider" />
+          <label for="slider">höher</label>
+        </section>
+        <section>
+          <label class="switch-container">
+            <span>Stoppen? </span>
+            <div class="switch-wrapper">
+              <input type="checkbox" id="stop-switch" />
+              <span class="switch round"></span>
+            </div>
+          </label>
+        </section>
       </section>
     </main>
     <script src="script.js"></script>
