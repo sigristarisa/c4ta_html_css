@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(6, 75, 21);
+  margin: 0;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: blue solid 2px;
+}
+
+.wavy {
+  border: red solid 2px;
+}
+
+.wavy span {
+  display: inline-block;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(var(--baseY));
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
