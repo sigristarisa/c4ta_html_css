@@ -11,7 +11,6 @@ stopSwitch.addEventListener("input", (event) => {
   event.target.checked
     ? updateBasePosition(0)
     : updateBasePosition(slider.value);
-  console.log("slider.value in switch", slider.value);
 });
 
 slider.addEventListener("input", (event) => {
